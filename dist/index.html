@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D 素體參考</title>
+    <script type="module" crossorigin src="./assets/index-BgxlcWmK.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BorFs5dI.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="side-panel" aria-label="控制面板">
+        <header class="app-header">
+          <p class="eyebrow">Drawing Reference</p>
+          <h1>3D 素體參考</h1>
+        </header>
+
+        <section class="panel-section">
+          <div class="section-title">素體</div>
+          <div class="model-grid" id="model-buttons" role="group" aria-label="選擇素體"></div>
+          <p class="asset-note">灰色精細素體：CC Character Base FBX，共 5 款模型</p>
+        </section>
+
+        <section class="panel-section control-stack" id="camera-controls"></section>
+
+        <section class="panel-section">
+          <div class="section-title">姿勢預設</div>
+          <div class="preset-grid" id="preset-buttons"></div>
+        </section>
+
+        <section class="panel-section">
+          <div class="section-title">顯示</div>
+          <div class="toggle-row">
+            <label><input id="toggle-grid" type="checkbox" checked /> 地面格線</label>
+            <label><input id="toggle-joints" type="checkbox" checked /> 關節點</label>
+            <label><input id="toggle-dof" type="checkbox" checked /> 景深</label>
+          </div>
+        </section>
+
+        <section class="panel-section control-stack" id="pose-controls"></section>
+        <section class="panel-section control-stack" id="light-controls"></section>
+      </aside>
+
+      <main class="stage">
+        <div class="top-toolbar" aria-label="視角工具列">
+          <div class="view-buttons">
+            <button data-view="front" type="button">正面</button>
+            <button data-view="side" type="button">側面</button>
+            <button data-view="top" type="button">俯視</button>
+            <button data-view="three-quarter" type="button">3/4</button>
+          </div>
+          <div class="action-buttons">
+            <button id="reset-pose" type="button">重設姿勢</button>
+            <button id="reset-camera" type="button">重設視角</button>
+            <button id="download-shot" class="primary" type="button">截圖</button>
+          </div>
+        </div>
+        <div id="viewport" aria-label="3D 素體場景"></div>
+        <div id="model-status" class="model-status" aria-live="polite">載入精細模型...</div>
+        <div class="viewport-hint">拖曳旋轉視角 · 滾輪縮放 · 右鍵平移</div>
+      </main>
+    </div>
+  </body>
+</html>
