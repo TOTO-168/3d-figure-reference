@@ -9,12 +9,12 @@
     "build": "vite build",
     "preview": "vite preview",
     "desktop:dev": "npm run build && electron .",
-    "desktop:pack": "npm run build && electron-builder --dir",
-    "desktop:dist": "npm run build && electron-builder",
-    "dist:mac": "npm run build && electron-builder --mac dmg",
-    "dist:win": "npm run build && electron-builder --win nsis",
-    "desktop:dist:mac:built": "electron-builder --mac dmg",
-    "desktop:dist:win:built": "electron-builder --win nsis",
+    "desktop:pack": "npm run build && electron-builder --dir --publish never",
+    "desktop:dist": "npm run build && electron-builder --publish never",
+    "dist:mac": "npm run build && electron-builder --mac dmg --publish never",
+    "dist:win": "npm run build && electron-builder --win nsis --publish never",
+    "desktop:dist:mac:built": "electron-builder --mac dmg --publish never",
+    "desktop:dist:win:built": "electron-builder --win nsis --publish never",
     "publish:public": "scripts/publish-public.sh"
   },
   "build": {
