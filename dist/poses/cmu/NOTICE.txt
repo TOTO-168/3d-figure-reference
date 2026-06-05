@@ -1,0 +1,12 @@
+CMU Motion Capture BVH clips
+
+Source: CMU Graphics Lab Motion Capture Database
+URL: https://mocap.cs.cmu.edu/
+
+Bundled clips:
+- 02_01_walk.bvh: subject 02, trial 01, walk
+- 09_01_run.bvh: subject 09, trial 01, run
+- 13_01_sit-stand.bvh: subject 13, trial 01, sit on high stool / stand up
+
+The data used in this project was obtained from mocap.cs.cmu.edu.
+The database was created with funding from NSF EIA-0196217.
